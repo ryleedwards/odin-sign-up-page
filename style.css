@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap");
 
 :root {
-  --gray-light: rgb(250, 250, 250);
+  --gray-light: rgb(220, 220, 220);
+  --dark-blue: #004052;
+  --light-blue: #175e70;
+  --blue-gray: #324951;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
@@ -10,6 +14,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 
 .container-main {
@@ -21,7 +33,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +54,7 @@
   border: solid 2px white;
   border-radius: 50%;
   padding: 0.5em;
+  transform: rotate(-20deg);
 }
 
 .logo-text {
@@ -60,10 +73,22 @@
 }
 
 .top-banner,
+.bottom-banner,
+.form-container {
+  padding-left: 3rem;
+}
+
+.top-banner,
 .bottom-banner {
   height: 33vh;
   flex-grow: 1;
   background-color: var(--gray-light);
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 2rem;
 }
 
 .form-container {
@@ -71,4 +96,9 @@
   flex-grow: 1;
   background-color: white;
   box-shadow: 10px 10px 8px #888888;
+  padding-top: 2rem;
+}
+
+.bottom-banner {
+  padding-top: 2rem;
 }
