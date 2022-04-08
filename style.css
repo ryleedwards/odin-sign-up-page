@@ -22,6 +22,22 @@
   color: white;
   border: none;
   border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+
+input {
+  margin: 0.5em 0;
+  width: 15em;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px 3px var(--dark-blue);
+  outline: 0;
 }
 
 .container-main {
@@ -40,8 +56,8 @@
 }
 
 .inner-left-container {
-  margin-bottom: 40%;
-  height: 20%;
+  margin-bottom: 30vh;
+  height: 20vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -101,4 +117,12 @@
 
 .bottom-banner {
   padding-top: 2rem;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-item {
 }
