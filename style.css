@@ -17,12 +17,12 @@
 }
 
 .btn {
-  padding: 0.5rem 1.5rem;
+  padding: 16px 32px;
   background: var(--dark-blue);
   color: white;
   border: none;
   border-radius: 8px;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .btn:hover {
@@ -31,12 +31,13 @@
 }
 
 input {
-  margin: 0.5rem 0;
-  width: 15em;
+  margin: 16px 0;
+  width: 300px;
+  height: auto;
 }
 
 input:focus {
-  box-shadow: 0px 0px 5px 0.01em var(--dark-blue);
+  box-shadow: 0px 0px 5px 1px var(--dark-blue);
   border-color: var(--light-blue);
   outline: 0;
 }
@@ -58,7 +59,7 @@ input:focus {
 
 .inner-left-container {
   margin-bottom: 30vh;
-  height: 20vh;
+  height: 128px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -67,18 +68,18 @@ input:focus {
 }
 
 #logo {
-  height: 75%;
+  height: 96px;
   border: solid 2px white;
   border-radius: 50%;
-  padding: 0.5em;
+  padding: 8px;
   transform: rotate(-20deg);
 }
 
 .logo-text {
   font-family: "EB Garamond", serif;
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
-  margin-left: 2rem;
+  margin-left: 24px;
 }
 
 .container-right {
@@ -92,7 +93,7 @@ input:focus {
 .top-banner,
 .bottom-banner,
 .form-container {
-  padding-left: 3rem;
+  padding-left: 72px;
 }
 
 .top-banner,
@@ -105,7 +106,7 @@ input:focus {
 .top-banner {
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 2rem;
+  padding-bottom: 32px;
 }
 
 .form-container {
@@ -113,16 +114,16 @@ input:focus {
   flex-grow: 1;
   background-color: white;
   box-shadow: 10px 10px 8px #888888;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .bottom-banner {
-  padding-top: 2rem;
+  padding-top: 32px;
 }
 
 .signup-form {
-  margin-top: 1rem;
+  margin-top: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -136,7 +137,7 @@ input:focus {
 label {
   font-variant-caps: all-petite-caps;
   font-weight: bold;
-  margin-bottom: -0.5rem;
+  margin-bottom: -16px;
 }
 
 input:invalid {
