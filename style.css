@@ -34,6 +34,7 @@ input {
   margin: 16px 0;
   width: 300px;
   height: auto;
+  border-radius: 4px;
 }
 
 input:focus {
@@ -59,14 +60,20 @@ input:focus {
 }
 
 .inner-left-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.sub-inner-left-container {
   margin-bottom: 30vh;
   height: 128px;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 0 auto;
+  margin-top: 256px;
 }
 
 #logo {
@@ -87,6 +94,7 @@ input:focus {
 .img-credit {
   flex-shrink: 0;
   color: white;
+  font-size: 0.5rem;
 }
 
 a > p {
