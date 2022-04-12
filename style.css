@@ -58,7 +58,7 @@ input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: min(40%, 800px);
+  width: min(40vw, 800px);
   display: flex;
   flex-direction: column;
   justify-content: center;

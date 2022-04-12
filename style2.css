@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap");
+
+:root {
+  --gray-light: rgb(220, 220, 220);
+  --dark-blue: #004052;
+  --light-blue: #175e70;
+  --blue-gray: #324951;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 16px 32px;
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+
+.btn:active {
+  background-color: var(--dark-blue);
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+input {
+  margin: 16px 0;
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+input:focus {
+  box-shadow: 0px 0px 5px 1px var(--dark-blue);
+  border-color: var(--light-blue);
+  outline: 0;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+}
+
+.left {
+  height: 100vh;
+  width: 30vw;
+  min-width: 350px;
+  background-color: lightblue;
+}
+
+.right {
+  height: 100vh;
+  width: 70vw;
+  background-color: lightcoral;
+}
