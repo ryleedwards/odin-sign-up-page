@@ -73,7 +73,6 @@ input:focus {
 }
 
 .sub-inner-left-container {
-  margin-bottom: 30vh;
   height: 128px;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -82,12 +81,10 @@ input:focus {
   margin-top: 256px;
 }
 
-#logo {
-  height: 96px;
-  border: solid 2px white;
-  border-radius: 50%;
+.fa-person-hiking {
+  color: white;
+  font-size: 48px;
   padding: 8px;
-  transform: rotate(-20deg);
 }
 
 .logo-text {
