@@ -73,6 +73,7 @@ input:focus {
 }
 
 .sub-inner-left-container {
+  position: relative;
   height: 128px;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
