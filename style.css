@@ -30,6 +30,12 @@
   background-color: var(--light-blue);
 }
 
+.btn:active {
+  background-color: var(--dark-blue);
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
 input {
   margin: 16px 0;
   width: 300px;
