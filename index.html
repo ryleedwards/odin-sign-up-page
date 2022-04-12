@@ -10,21 +10,16 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="app.js"></script>
-    <title>Sign Up</title>
+    <title>Sign-Up Page</title>
   </head>
   <body>
-    <div class="container-main">
-      <div
-        class="container-left"
-        style="background-image: url(assets/images/mountain-medium.jpg)"
-      >
-        <div class="inner-left-container">
-          <div class="sub-inner-left-container">
-            <i class="fa-solid fa-person-hiking"></i>
-            <h1 class="logo-text">SIGN-UP FORM</h1>
-          </div>
+    <div class="main">
+      <div class="left">
+        <div class="logo-area">
+          <i class="fa-solid fa-person-hiking logo-icon"></i>
+          <h1 class="logo-text">SIGN-UP FORM</h1>
         </div>
-        <p class="img-credit">
+        <p id="photo-credit">
           Photo by
           <a class="img-credit" href="https://www.instagram.com/kasuma.f.g/"
             >Kasuma</a
@@ -37,8 +32,9 @@
           >
         </p>
       </div>
-      <div class="container-right">
-        <div class="top-banner">
+      <!-- BEGIN RIGHT COLUMN -->
+      <div class="right">
+        <div class="right-top">
           <p class="banner-text">Lorem ipsum dolor sit.</p>
           <br />
           <p class="banner-text">
@@ -47,7 +43,7 @@
             placeat velit vel. Voluptate incidunt
           </p>
         </div>
-        <div class="form-container">
+        <div class="right-middle">
           <h2 class="form-header">Let's do this!</h2>
           <form class="signup-form" action="#" method="post">
             <div class="form-item">
@@ -80,8 +76,8 @@
               <input type="password" name="cnfrm_pass" id="cnfrm_pass" />
             </div>
           </form>
-        </div>
-        <div class="bottom-banner">
+      </div>
+        <div class="right-bottom">
           <button type="submit" class="btn create-account">
             Create Account
           </button>
@@ -89,6 +85,7 @@
             Already have an account? <a href="#" id="login">Log in</a>
           </p>
         </div>
+      </div>
       </div>
     </div>
   </body>

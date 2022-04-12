@@ -3,16 +3,15 @@
 :root {
   --gray-light: rgb(220, 220, 220);
   --dark-blue: #004052;
+  --dark-blue-transparent: rgb(0, 64, 82, 20%);
   --light-blue: #175e70;
   --blue-gray: #324951;
   font-family: "Open Sans", sans-serif;
 }
 
-*,
-::after,
-::before {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -49,118 +48,115 @@ input:focus {
   outline: 0;
 }
 
-.container-main {
+/* ||||||||||||||||||||||| */
+/* BEGIN CONTAINER STYLING */
+/* ||||||||||||||||||||||| */
+
+.main {
+  width: 100vw;
   display: flex;
+  justify-content: center;
 }
 
-.container-left {
-  background-image: url(assets/images/mountain-medium.jpg);
+.left {
+  position: relative;
+  min-width: 350px;
+  width: 30vw;
+  height: 100vh;
+  background-image: url("./assets/images/mountain-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: min(40vw, 800px);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.inner-left-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+.logo-area {
   width: 100%;
-}
-
-.sub-inner-left-container {
-  position: relative;
-  height: 128px;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 10vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-bottom: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 256px;
+  color: white;
 }
 
-.fa-person-hiking {
-  color: white;
+.logo-icon {
   font-size: 3rem;
+  margin-right: 12px;
 }
 
 .logo-text {
-  font-family: "EB Garamond", serif;
-  font-size: 3rem;
-  color: white;
-  margin-left: 24px;
+  font-size: 2rem;
 }
 
-.img-credit {
-  flex-shrink: 0;
-  color: white;
-  font-size: 0.5rem;
+#photo-credit {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  color: rgb(255, 255, 255, 0.5);
 }
 
-a > p {
-  font-size: 64px;
+#photo-credit a {
+  color: rgb(255, 255, 255, 0.5);
 }
-.container-right {
+
+.right {
   height: 100vh;
-  width: 100%;
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.top-banner,
-.bottom-banner,
-.form-container {
-  padding-left: 72px;
+.right-top,
+.right-middle,
+.right-bottom {
+  font-size: 1rem;
+  padding: 36px 0 0 36px;
 }
 
-.top-banner,
-.bottom-banner {
-  height: 33vh;
-  flex-grow: 1;
-  background-color: var(--gray-light);
+.right-top,
+.right-bottom {
+  background-color: var(--dark-blue-transparent);
+  height: 33.33vh;
 }
 
-.top-banner {
+.right-top {
   display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 36px;
 }
 
-.form-container {
-  height: auto;
-  flex-grow: 1;
-  background-color: white;
-  box-shadow: 10px 10px 8px #888888;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.right-middle {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 36px;
 }
 
-.bottom-banner {
-  padding-top: 32px;
+.right-top > p {
+  width: clamp(650px, 50%, 1200px);
 }
 
 .signup-form {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  width: clamp(650px, 50%, 1200px);
+  gap: 16px;
+  font-size: 0.75rem;
+}
+
+.form-header {
+  padding-bottom: 16px;
 }
 
 .form-item {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 
-label {
-  font-variant-caps: all-petite-caps;
-  font-weight: bold;
-  margin-bottom: -16px;
-}
-
-input:invalid {
-  border-color: red;
+.form-item > label {
+  margin-bottom: -15px;
+  text-transform: uppercase;
 }
